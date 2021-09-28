@@ -15,6 +15,7 @@
 		@foreach($types as $type)
 			<li>
 				<a href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}/">{{ $type->name }}</a>
+				
 			</li>
 		@endforeach
 		</ul>

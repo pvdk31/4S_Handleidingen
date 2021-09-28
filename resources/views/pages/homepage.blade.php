@@ -1,9 +1,9 @@
 @extends('layouts.default')
 
 @section('introduction_text')
-    <p>{{ __('introduction_texts.homepage_line_1') }}</p>
-    <p>{{ __('introduction_texts.homepage_line_2') }}</p>
-    <p>{{ __('introduction_texts.homepage_line_3') }}</p>
+    <h5><b>{{ __('introduction_texts.homepage_line_1') }}</b></h5>
+    <h5><b>{{ __('introduction_texts.homepage_line_2') }}</b></h5>
+    <h5><b>{{ __('introduction_texts.homepage_line_3') }}</b></h5>
 @endsection
 
 @section('content')
@@ -13,6 +13,7 @@
             {{ __('misc.all_brands') }}
         @show
     </h1>
+   
 
 
     <?php
@@ -22,7 +23,9 @@
     ?>
 
     <div class="container">
+        <div class="stylebrands">
         <!-- Example row of columns -->
+        </div>
         <div class="row">
 
             @foreach($brands->chunk($chunk_size) as $chunk)
@@ -59,3 +62,4 @@
     </div>
 
 @endsection
+

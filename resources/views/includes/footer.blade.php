@@ -1,6 +1,13 @@
 
 <footer>
-	© {{ __('misc.copyright') }}
+<div class="linksfooter">
+  <a href="/" title="Over ons" alt="link">Over ons</a>
+  <a href="/" title="Social links" alt="{{ __('misc.home_alt') }}">Social links</a>
+  <a href="/" title=" Contact gegevens" alt="{{ __('misc.home_alt') }}"> Contact gegevens</a>
+</div>
+<div class="smallfooter">
+  © {{ __('misc.copyright') }}
+</div>
 </footer>
 
 
